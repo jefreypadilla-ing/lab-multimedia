@@ -84,9 +84,17 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0.5rem;
 }
 
+.titulouno{
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color: black;
+}
+
 p {
   margin-top: 0;
   margin-bottom: 1rem;
+  text-align: justify;
 }
 
 abbr[title],
@@ -6092,9 +6100,14 @@ button.bg-dark:focus {
 .bg-transparent {
   background-color: transparent !important;
 }
+.imgp{
+  margin:10px auto;
+  display:block;
+}
 
 .border {
   border: 1px solid #dee2e6 !important;
+  font-style: italic !important;
 }
 
 .border-top {

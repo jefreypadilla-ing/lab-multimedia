@@ -3,6 +3,7 @@ extends layout
 block content
 
   header
+    link(rel="icon", href="/images/logo.png")
     nav#mainNav.navbar.navbar-expand-lg.navbar-dark.bg-dark.fixed-top
       a(href="/").navbar-brand.js-scroll-trigger
         img(src="/images/logo.png", width="30" height="30").d-inline-block.align-top
@@ -32,9 +33,8 @@ block content
 
           if username
             li.nav-item
-              a(href="#").nav-item.nav-link
+              a(href="#", data-toggle="modal", data-target="#exampleModalPopovers").nav-item.nav-link
                 i.fa.fa-database  Administrar
-
 
         if !username
           #form
@@ -63,10 +63,10 @@ block content
 
   section#section-header
     .caption
-      span.border FUll Page
+      span.border Call of Duty
       br
       br
-      span.border background Image
+      span.border "Olvida el pasado, vive el futuro".
 
   .spacer
 
@@ -78,32 +78,51 @@ block content
   #content.container
 
     section#principal
-      h2 Primer Titulo
-      p What is Lorem Ipsum?
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-      p Why do we use it?
-        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-      p Why do we use it?
-        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-
+      h2.titulouno Call Of Duty: Un Juego hecho para el exito.
+      p  Call of Duty es una serie de videojuegos en primera persona (FPS), de estilo bélico, creada por Ben Chichoski, desarrollada principal e inicialmente por Infinity Ward, y distribuida por Activision. La franquicia comenzó para computadora personal y posteriormente fue expandiéndose hacia videoconsolas de sexta y séptima generación, tanto de sobremesa como portátiles, llegando así, a lanzar varios juegos derivados de forma paulatina con la serie principal.
+      p La serie inicialmente se ambientaba en la Segunda Guerra Mundial, relatando personajes y combates acaecidos durante dicho conflicto bélico. Esto fue cambiando hasta la actualidad, donde los argumentos suceden en ambientes contemporáneos y ficticios, como se puede ver en Call of Duty: Black Ops, en la Guerra Fría, como se ve en Call of Duty 4: Modern Warfare, Call of Duty: Modern Warfare 2, y Call of Duty: Modern Warfare 3 en la Tercera Guerra Mundial, y en los futuros tecnológicos en Call of Duty: Black Ops 2, Call of Duty: Advanced Warfare, Call of Duty: Black Ops 3 y Call of Duty: Infinite Warfare. Los DLC son lanzados antes en las consolas Xbox desde el Call of Duty 4: Modern Warfare hasta el Call of Duty: Advanced Warfare, hasta Black Ops 3 donde cambio a PlayStation 4.
+      img.imgp(src="/images/banner.png")
+      p La saga ha gozado de un gran éxito comercial y crítico el cual ha ido aumentando desde su creación hasta la actualidad. Call of Duty ha logrado grandes ganancias en la industria de los videojuegos, vendiendo 55 millones de copias totales de sus juegos, recaudando más de 3 mil millones de dólares, creando además otros productos de la franquicia, incluyendo figuras de acción, juego de naipes y una mini-serie de comic books. De igual forma, la serie ha sido objeto de críticas y controversias desde su creación, hasta la actualidad.
 
     section#biografia
-      h2 segundo titulo
-      p What is Lorem Ipsum?
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-      p Why do we use it?
-        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-      p Why do we use it?
-        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+      h2.titulouno ¿Quién esta detras de todo el exito de Call of Duty?
+      p El juego Call of Duty fue originalmente desarrollado por Benjamin "Ben" Chichoski y fue apoyado por empresas desarrolladoras de juegos como Infinity Ward, Treyarch , Sledgehammer Games, Spark Unlimited (GC)Amaze Entertainment (PS2), Rebellion Developments (PS2), n-Space (Nintendo DS) , Gray Matter Interactive (PS2).
+      p La franquicia de Call of Duty es considerada un éxito, la cual se ha incrementado desde su primer título, hasta hoy en día. Suele ocurrir que cada videojuego de la serie, es galardonado con varios premios, entre ellos, el Mejor Videojuego del Año. Hasta finales de 2010, la franquicia ha vendido más de 55 millones de copias, lo cual da un total de 3 mil millones de dólares en ventas.
+      img.imgp(src="/images/Call-img-p.png")
+      p Así como su popularidad en ventas, también tiene una popularidad en críticas negativas. Tales críticas se deben a su violencia cruda; al argumento en sus videojuegos, entre otras. Un claro ejemplo es Call of Duty: Modern Warfare 2, el cual es considerado el videojuego más polémico de la franquicia, y el más controvertido del 2009.
+      p La principal controversia se debe a la cuarta misión del videojuego, llamada «No Russian», donde el jugador toma el papel de un soldado estadounidense, "Joseph Allen", bajo el alias "Alexei Borodin". Este se encuentra infiltrado en un grupo terrorista ruso por órdenes de la CIA, el cual debe asesinar a multitud de civiles a sangre fría en un aeropuerto ruso.
+      
 
     section#juegos
-      h2 tercer titulo
-      p What is Lorem Ipsum?
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-      p Why do we use it?
-        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-      p Why do we use it?
-        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+      h2.titulouno Juegos de la Saga Mas Jugados
+      h3 Call of Duty: 
+      p Es el primer título de la franquicia, que además se llamó como la serie, y fue lanzado para las videoconsolas de sexta generación. El juego es el sucesor espiritual del videojuego Medal of Honor: Allied Assault que fue desarrollado por 2015 Inc. (cuyos antiguos empleados crearon el estudio de Infinity Ward), que simula la infantería combinada con la armas de la Segunda Guerra Mundial. El videojuego simula la infantería y armas combinadas de la Segunda Guerra Mundial.
+      h3 Call of Duty 4: Modern Warfare:
+      p Considerado el mejor por mucha gente y desarrollado por Infinity Ward y distribuido por Activision este título precedido por Call of Duty 3, es el cuarto título de la serie Call of Duty y el cuarto de esta misma en ser título principal. Fue lanzado para Microsoft Windows, Macintosh, PlayStation 3, Xbox 360, Wii y Nintendo DS. La historia toma lugar en el año 2011, donde un líder radical ha ejecutado al presidente Al-Fulani que preside un país sin nombre con localización en Oriente Medio, y un movimiento «ultranacionalista» da inicio a una guerra civil en Rusia. Los conflictos son vistos desde la perspectiva de un grupo de la Fuerza de Reconocimiento del Cuerpo de Marines de los Estados Unidos y de un comando del SAS británico, estableciéndose estos en varios lugares, incluyendo Medio Oriente, Azerbaiyán, Rusia y Prípiat.
+
+      #exampleModalPopovers(tabindex="-1", role="dialog", aria-labelledby="exampleModalPopoversLabel", style="display: none;", aria-hidden="true").modal.fade
+        .modal-dialog(role="document")
+          .modal-content
+            .modal-header
+              h5#exampleModalPopoversLabel.modal-title Datos del Usuario
+              button(type="button", data-dismiss="modal", aria-label="Close").close
+                span(aria-hidden="true")
+
+            .modal-body
+              h5 Username
+              p #{username + " "}
+                a(href="#")
+                  i.fa.fa-edit
+              hr
+              h5 Email
+              p #{username + " "}
+                a(href="#")
+                  i.fa.fa-edit
+
+              .modal-footer
+                button(type="button", data-dismiss="modal").btn.btn-secondary Close
+                button(type="button", data-dismiss="modal").btn.btn-primary Save Changes
+
 
   footer.py-5.bg-dark
     .container
